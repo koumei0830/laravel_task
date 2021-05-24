@@ -10,7 +10,7 @@
     </div>
     <ul class="list-group list-group-flush">
         @foreach($tasks as $task)
-        <li class="list-group-item">{{$task->name}}</li>
+        <a class="list-group-item" href="/task/{{$task->id}}">{{$task->name}}</a>
         @endforeach
     </ul>
 </x-task-layout>
